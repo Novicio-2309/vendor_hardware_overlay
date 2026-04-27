@@ -3,7 +3,7 @@
         android:versionCode="1"
         android:versionName="1.0">
         <overlay android:targetPackage="android"
-        	android:requiredSystemPropertyName="ro.vendor.build.fingerprint"
+        	android:requiredSystemPropertyName="ro.product.device"
         	android:requiredSystemPropertyValue="TECNO-KM7k"
 		android:priority="1000"
 		android:isStatic="true" />
