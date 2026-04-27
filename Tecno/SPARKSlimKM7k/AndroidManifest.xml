@@ -1,19 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:versionCode="36"
-    android:versionName="16"
-    package="phh.treble.overlay.tecno.km7k.framework">
-    <uses-sdk
-        android:minSdkVersion="31"
-        android:targetSdkVersion="36" />
-    <overlay
-        android:priority="1000"
-        android:targetPackage="android"
-        android:targetName="framework-res"
-        android:isStatic="true"
-        android:requiredSystemPropertyName="ro.product.device"
-        android:requiredSystemPropertyValue="TECNO-KM7k" />
-    <application
-        android:hasCode="false"
-        android:extractNativeLibs="false" />
+        package="me.phh.treble.overlay.tecno.km7k"
+        android:versionCode="1"
+        android:versionName="1.0">
+        <overlay android:targetPackage="android"
+        	android:requiredSystemPropertyName="ro.vendor.build.fingerprint"
+        	android:requiredSystemPropertyValue="TECNO-KM7k"
+		android:priority="1000"
+		android:isStatic="true" />
 </manifest>
